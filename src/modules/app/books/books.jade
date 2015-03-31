@@ -1,0 +1,14 @@
+doctype
+html(lang="en")
+head
+  meta(charset="UTF-8")
+  title Document
+body
+  .bookWrapper
+    ul
+      li(ng-repeat="book in books")
+        .bookCover {{book.cover}}
+        .bookDetails
+          p {{book.title}}
+          p {{book.author}}
+  

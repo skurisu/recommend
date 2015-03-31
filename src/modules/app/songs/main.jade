@@ -1,0 +1,16 @@
+doctype
+html(lang="en")
+head
+  meta(charset="UTF-8")
+  title Document
+body
+  .outerWrapper
+    ul
+      li(ng-repeat="song in songs")
+        a(ui-sref="books({id: song.id})")
+          .albumCover {{song.album_cover}}
+        .albumDetails 
+          p {{song.song_name}}
+          p {{song.artist}}
+          p {{song.album_name}}
+  
