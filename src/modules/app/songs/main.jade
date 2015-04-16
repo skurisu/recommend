@@ -8,7 +8,7 @@ body
     ul
       li(ng-repeat="song in songs")
         a(ui-sref="books({id: song.id})")
-          .albumCover {{song.album_cover}}
+          img( class="albumCover" ng-src="{{song.album_cover}}")
         .albumDetails 
           p {{song.song_name}}
           p {{song.artist}}
